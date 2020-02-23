@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Welcome to Azure!</title>
+<style>
+body {
+  background-color: Azure;  
+  color: Indigo;
+}
+</style>
+</head>
+<body>
+
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
 <!--  If necessary, please modify the charset parameter to specify the        -->
@@ -11,9 +25,10 @@
 <!--  ----------------------------------------------------------------------  -->
 
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<h1 style="background-color: dodgerblue; text-align: center;">Opinion Survey : Azure Cloud Computing</h1>
 
 <input type=hidden name="oid" value="00D6g000007NZ5T">
-<input type=hidden name="retURL" value="http://google.com">
+<input type=hidden name="retURL" value="http://testthisvm.southcentralus.cloudapp.azure.com/Thankyou.html">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -62,6 +77,57 @@
 <option value="Telecommunications">Telecommunications</option>
 <option value="Transportation">Transportation</option>
 <option value="Utilities">Utilities</option>
+</select><br>
+
+Association with IT Team::<select  id="00N6g00000OKXyx" name="00N6g00000OKXyx" title="Association with IT Team:"><option value="">--None--</option><option value="Directly Associated">Directly Associated</option>
+<option value="Indirectly Associated">Indirectly Associated</option>
+<option value="Not Applicable">Not Applicable</option>
+</select><br>
+
+Which IT Role is Difficult::<select  id="00N6g00000OKXzC" name="00N6g00000OKXzC" title="Which IT Role is Difficult:"><option value="">--None--</option><option value="Software Application Developer">Software Application Developer</option>
+<option value="Technology Stack Developer">Technology Stack Developer</option>
+<option value="Network Administrator">Network Administrator</option>
+<option value="Infrastructure Engineer">Infrastructure Engineer</option>
+<option value="Database Engineer">Database Engineer</option>
+<option value="Technical Support Engineer">Technical Support Engineer</option>
+<option value="Program Business Analyst">Program Business Analyst</option>
+<option value="Software Quality Assurance">Software Quality Assurance</option>
+<option value="IT Project Manager">IT Project Manager</option>
+<option value="Others">Others</option>
+</select><br>
+
+Your Job Title::<input  id="00N6g00000OKXzR" maxlength="100" name="00N6g00000OKXzR" size="20" type="text" /><br>
+
+Heard About Microsoft Azure?::<select  id="00N6g00000OKXzb" name="00N6g00000OKXzb" title="Heard About Microsoft Azure?:"><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Heard About Salesforce CRM?::<select  id="00N6g00000OKXzl" name="00N6g00000OKXzl" title="Heard About Salesforce CRM?:"><option value="">--None--</option><option value="Yes">Yes</option>
+<option value="No">No</option>
+</select><br>
+
+Favorite Cloud Leader::<select  id="00N6g00000OKY2L" name="00N6g00000OKY2L" title="Favorite Cloud Leader:"><option value="">--None--</option><option value="Microsoft Azure">Microsoft Azure</option>
+<option value="Salesforce.com">Salesforce.com</option>
+<option value="Amazon Web Service">Amazon Web Service</option>
+<option value="VMWare">VMWare</option>
+<option value="Google Cloud">Google Cloud</option>
+<option value="IBM Watson/Bluemix">IBM Watson/Bluemix</option>
+<option value="SAP HANA">SAP HANA</option>
+<option value="Oracle">Oracle</option>
+<option value="Workday">Workday</option>
+<option value="Not Applicable">Not Applicable</option>
+<option value="Others">Others</option>
+</select><br>
+
+Favorite Cloud Feature::<select  id="00N6g00000OKY2z" name="00N6g00000OKY2z" title="Favorite Cloud Feature:"><option value="">--None--</option><option value="Virtual Machine &amp; Containers">Virtual Machine &amp; Containers</option>
+<option value="Web App Service">Web App Service</option>
+<option value="Cloud Storage">Cloud Storage</option>
+<option value="Networking">Networking</option>
+<option value="Infrastructure &amp; Load Balancing">Infrastructure &amp; Load Balancing</option>
+<option value="Data Security &amp; Encryption">Data Security &amp; Encryption</option>
+<option value="Machine Learning">Machine Learning</option>
+<option value="Serverless Computing">Serverless Computing</option>
+<option value="Others">Others</option>
 </select><br>
 
 Comments!:<textarea  id="00N6g00000OKY39" name="00N6g00000OKY39" rows="4" type="text" wrap="soft"></textarea><br>
