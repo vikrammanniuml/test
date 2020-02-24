@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>Welcome to Azure!</title>
@@ -26,6 +25,8 @@ body {
 
 <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 <h1 style="background-color: dodgerblue; text-align: center;">Opinion Survey : Azure Cloud Computing</h1>
+<p style="background-color: lightgray; text-align: center;"><b>Thanks in advance for your valuable time and participation</b></p>
+<hr />
 
 <input type=hidden name="oid" value="00D6g000007NZ5T">
 <input type=hidden name="retURL" value="http://testthisvm.southcentralus.cloudapp.azure.com/Thankyou.html">
@@ -37,15 +38,14 @@ body {
 <!--  <input type="hidden" name="debugEmail" value="vikramsofz@gmail.com">    -->
 <!--  ----------------------------------------------------------------------  -->
 
-<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-
-<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-
-<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-
-<label for="industry">Industry</label><select  id="industry" name="industry"><option value="">--None--</option><option value="Agriculture">Agriculture</option>
+<p><strong><label for="first_name">First Name</label></strong><br /><input id="first_name" maxlength="40" name="first_name" required size="30" type="text" tabindex="2" /><br />
+<strong><label for="last_name">Last Name</label></strong><br /><input id="last_name" maxlength="80" name="last_name" required size="30" type="text" tabindex="2" /><br />
+<strong><label for="email">Email</label></strong><br /><input id="email" maxlength="80" name="email" size="30" type="email" /></p>
+<strong><label for="company">Company</label></strong><br /><input id="company" maxlength="40" name="company" size="30" type="text" /><br />
+<p><label for="industry"><strong>Industry</strong><br /></label></p>
+<p><select id="industry" style = "width:250px" name="industry">
+<option value="">--None--</option>
+<option value="Agriculture">Agriculture</option>
 <option value="Apparel">Apparel</option>
 <option value="Banking">Banking</option>
 <option value="Biotechnology">Biotechnology</option>
@@ -77,14 +77,91 @@ body {
 <option value="Telecommunications">Telecommunications</option>
 <option value="Transportation">Transportation</option>
 <option value="Utilities">Utilities</option>
-</select><br>
+</select></p>
 
-Association with IT Team::<select  id="00N6g00000OKXyx" name="00N6g00000OKXyx" title="Association with IT Team:"><option value="">--None--</option><option value="Directly Associated">Directly Associated</option>
+
+<p><strong>Association with IT Team:</strong><br /><strong></strong></p>
+<p><select id="00N6g00000OKXyx" style = "width:250px" name="00N6g00000OKXyx"  title="Association with IT Team">
+<option value="">--None--</option>
+<option value="Directly Associated">Directly Associated</option>
+<option value="Indirectly Associated">Indirectly Associated</option>
+<option value="Not Applicable">Not Applicable</option>
+</select></p>
+<p><strong>Which IT Role is Difficult:</strong></p>
+<p><select id="00N6g00000OKXzC" name="00N6g00000OKXzC" style = "width:250px"  title="Which IT Role is Difficult">
+<option value="">--None--</option>
+<option value="Software Application Developer">Software Application Developer</option>
+<option value="Technology Stack Developer">Technology Stack Developer</option>
+<option value="Network Administrator">Network Administrator</option>
+<option value="Infrastructure Engineer">Infrastructure Engineer</option>
+<option value="Database Engineer">Database Engineer</option>
+<option value="Technical Support Engineer">Technical Support Engineer</option>
+<option value="Program Business Analyst">Program Business Analyst</option>
+<option value="Software Quality Assurance">Software Quality Assurance</option>
+<option value="IT Project Manager">IT Project Manager</option>
+<option value="Others">Others</option>
+</select></p>
+<p><strong>Your Job Title:</strong><br /><input id="00N6g00000OKXzR" maxlength="100" name="00N6g00000OKXzR" required size="30" type="text" /></p>
+<hr />
+<p><strong>Heard About Microsoft Azure?:</strong></p>
+<p><select id="00N6g00000OKXzb" style = "width:250px" name="00N6g00000OKXzb" required title="Heard About Microsoft Azure?">
+<option value="">--None--</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select></p>
+<p><strong>Heard About Salesforce CRM?:</strong></p>
+<p><select id="00N6g00000OKXzl" style = "width:250px" name="00N6g00000OKXzl" required title="Heard About Salesforce CRM?">
+<option value="">--None--</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+</select></p>
+<p><strong>Favorite Cloud Leader:</strong></p>
+<p><select id="00N6g00000OKY2L" style = "width:250px" name="00N6g00000OKY2L" required title="Favorite Cloud Leader">
+<option value="">--None--</option>
+<option value="Microsoft Azure">Microsoft Azure</option>
+<option value="Salesforce.com">Salesforce.com</option>
+<option value="Amazon Web Service">Amazon Web Service</option>
+<option value="VMWare">VMWare</option>
+<option value="Google Cloud">Google Cloud</option>
+<option value="IBM Watson/Bluemix">IBM Watson/Bluemix</option>
+<option value="SAP HANA">SAP HANA</option>
+<option value="Oracle">Oracle</option>
+<option value="Workday">Workday</option>
+<option value="Not Applicable">Not Applicable</option>
+<option value="Others">Others</option>
+</select></p>
+<p><strong>Favorite Cloud Feature:</strong></p>
+<p><select id="00N6g00000OKY2z" style = "width:250px" name="00N6g00000OKY2z" required title="Favorite Cloud Feature">
+<option value="">--None--</option>
+<option value="Virtual Machine &amp; Containers">Virtual Machine &amp; Containers</option>
+<option value="Web App Service">Web App Service</option>
+<option value="Cloud Storage">Cloud Storage</option>
+<option value="Networking and Infrastructure">Networking and Infrastructure</option>
+<option value="Easy Troubleshooting">Easy Troubleshooting</option>
+<option value="Data Security and Encryption">Data Security and Encryption</option>
+<option value="Machine Learning &amp; AI">Machine Learning &amp; AI</option>
+<option value="Serverless Computing">Serverless Computing</option>
+<option value="Others">Others</option>
+</select></p>
+<hr />
+<p>Comments!<br /><textarea id="00N6g00000OKY39" name="00N6g00000OKY39" rows="3" cols="100" type="text" wrap="soft" autocomplete="off"></textarea></p>
+<hr />
+<p><br /> <input type="submit" name="submit" /></p>
+<p></p>
+<hr />
+<p><strong>Network&nbsp; &nbsp;:</strong> <a href="https://www.linkedin.com/in/vikram-manni-791a1a64/" target="_blank" rel="noopener"><strong>LinkedIn</strong></a></p>
+<p><a href="mailto:vikram_manni@student.uml.edu">Email Me!</a><br></p>
+
+
+<!--
+<p><strong>Association with IT Team:</strong><br /><strong></strong></p>
+<select  id="00N6g00000OKXyx" name="00N6g00000OKXyx" title="Association with IT Team:"><option value="">--None--</option><option value="Directly Associated">Directly Associated</option>
 <option value="Indirectly Associated">Indirectly Associated</option>
 <option value="Not Applicable">Not Applicable</option>
 </select><br>
 
-Which IT Role is Difficult::<select  id="00N6g00000OKXzC" name="00N6g00000OKXzC" title="Which IT Role is Difficult:"><option value="">--None--</option><option value="Software Application Developer">Software Application Developer</option>
+Which IT Role is Difficult::<select  id="00N6g00000OKXzC" name="00N6g00000OKXzC" title="Which IT Role is Difficult:"><option value="">--None--</option>
+<option value="Software Application Developer">Software Application Developer</option>
 <option value="Technology Stack Developer">Technology Stack Developer</option>
 <option value="Network Administrator">Network Administrator</option>
 <option value="Infrastructure Engineer">Infrastructure Engineer</option>
@@ -106,7 +183,8 @@ Heard About Salesforce CRM?::<select  id="00N6g00000OKXzl" name="00N6g00000OKXzl
 <option value="No">No</option>
 </select><br>
 
-Favorite Cloud Leader::<select  id="00N6g00000OKY2L" name="00N6g00000OKY2L" title="Favorite Cloud Leader:"><option value="">--None--</option><option value="Microsoft Azure">Microsoft Azure</option>
+Favorite Cloud Leader::<select  id="00N6g00000OKY2L" name="00N6g00000OKY2L" title="Favorite Cloud Leader:"><option value="">--None--</option>
+<option value="Microsoft Azure">Microsoft Azure</option>
 <option value="Salesforce.com">Salesforce.com</option>
 <option value="Amazon Web Service">Amazon Web Service</option>
 <option value="VMWare">VMWare</option>
@@ -133,5 +211,5 @@ Favorite Cloud Feature::<select  id="00N6g00000OKY2z" name="00N6g00000OKY2z" tit
 Comments!:<textarea  id="00N6g00000OKY39" name="00N6g00000OKY39" rows="4" type="text" wrap="soft"></textarea><br>
 
 <input type="submit" name="submit">
-
+-->
 </form>
